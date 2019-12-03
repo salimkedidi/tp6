@@ -1,0 +1,11 @@
+<ul class="list-group">
+    <li *ngFor="let p of lesProduits"  class="list-group-item">
+        Id :{{p.id}} Libelle: {{p.libelle}}
+        <a (click)="aff(p.id)" [routerLink]="['/produits', p.id]" > Détail</a>
+      
+       
+    </li>
+</ul>
+<p class="text-danger">        L'identifiant récupéré est {{identifiant}}
+</p>
+
